@@ -10,7 +10,7 @@ import java.util.Set;
 import db.DbException;
 import gui.listeners.DataChangeListener;
 import gui.util.Alerts;
-import gui.util.Constratints;
+import gui.util.Constraints;
 import gui.util.Utils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -132,8 +132,8 @@ public class DepartmentFormController implements Initializable {
 	}
 	
 	private void initializeNodes() {
-		Constratints.setTextFieldInteger(txtId);
-		Constratints.setTextFieldMaxLength(txtName, 30);
+		Constraints.setTextFieldInteger(txtId);
+		Constraints.setTextFieldMaxLength(txtName, 30);
 	}
 
 	public void updateFormData() {
